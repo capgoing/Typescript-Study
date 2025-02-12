@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es5", // 컴파일된 자바스크립트가 ECMAScript 5 표준을 따르도록 설정
+    "lib": ["dom", "dom.iterable", "esnext"], // 사용 가능한 라이브러리: DOM API, DOM 반복자, 최신 ECMAScript
+    "allowJs": true, // JavaScript 파일도 컴파일할 수 있도록 허용
+    "skipLibCheck": true, // 라이브러리의 타입 정의 검사 생략 (컴파일 속도 향상)
+    "allowSyntheticDefaultImports": true, // default export가 없는 모듈도 default import 가능
+    "strict": true, // 엄격한 타입 검사 옵션을 활성화
+    "forceConsistentCasingInFileNames": true, // 파일 이름 대소문자 일관성 강제
+    "noFallthroughCasesInSwitch": true, // switch문에서 case 간의 암묵적인 fallthrough를 방지
+    "module": "commonjs", // 모듈 시스템으로 CommonJS 사용
+    "outDir": "dist", // 컴파일된 파일을 저장할 디렉토리
+    "rootDir": "src" // 소스 파일의 루트 디렉토리
+  },
+  "include": ["src/**/*"], // src 폴더 아래에 컴파일된 모든 타입스크립트 파일이 생성
+  "exclude": ["node_modules"] // node_modules 폴더는 컴파일에서 제외
+}
